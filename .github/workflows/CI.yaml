@@ -11,8 +11,8 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
       - name: build code
-        run: mvn clean package
+        run: "mvn clean package"
         shell: bash
       - name: test code
-        run: mvn test
+        run: "mvn test"
         shell: bash
